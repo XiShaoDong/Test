@@ -7,28 +7,43 @@
 }
 
 /* Default Start */
-*{
-    margin: 0;
-    padding: 0;
-    /* 去字体和链接的默认样式 */
-    text-decoration: none;
-    list-style: none;
+    *{
+        /* width: 100%; */
+        margin: 0;
+        padding: 0;
+        /* 去字体和链接的默认样式 */
+        text-decoration: none;
+        list-style: none;
 
-    justify-content:center;
-    align-items: center;
+        justify-content:center;
+        align-items: center;
 
-    color: black;
-    font-family: "Playfair Display",Arial,"Helvetica Neue",Helvetica,sans-serif;
-}
-/* font */
-.italic{
-    font-style: italic;
-}
-/* font */
+        color: black;
+        font-style: normal;
+        font-family: "Playfair Display",Arial,"Helvetica Neue",Helvetica,sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.05em;
+    }
+    /* font */
+        .italic{
+            font-style: italic;
+        }
+    /* font */
 
 /* Default End */
 
 /* naviation bar */
+    .header{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding:15px;
+        background-color: var(--color-primary) ;
+    }
+    .header .btli{
+        padding: 10px 20px;
+    }
     /* logo */
         .logo{
             flex-direction: column;
@@ -37,7 +52,7 @@
         }
         .church{
             width: 100px;
-            height: 80px;
+            height: 100px;
         }
         .church-text{
             margin: 0px;
@@ -47,17 +62,8 @@
     /* logo */
 
     /* link */
-        .header{
-            display: flex;
-            flex-direction: column;
-            justify-content:space-around;
-            margin: 0px;
-            padding:0px 100px 0px;
-            background-color: var(--color-primary) ;
-        }
-
         .nav-bar {
-            margin: 10px;
+            padding: 10px 20px;
             display: flex;
             flex-direction: row;
             justify-content:center;
@@ -68,7 +74,7 @@
             text-decoration: none;
             color: var(--color-white);
             display: block;
-            width: 100px;
+            width: fit-content;
         }
         .nav-bar a:hover{
             color: orange;
@@ -77,20 +83,33 @@
         .nav-bar a:active{
             color: red;
         }
+        
+        .row{
+            display: flex;
+            flex-direction: row;
+        }
             /* drop dwn */
             .droplist{
                 /* hiden droplist */
+                /* display: block; */
                 display: none;
                 background-color: RGB(28, 45, 53, 0.5);
                 box-shadow: 0px 1px 2px black;
-                text-align: center;
+                text-align:start;
+                margin-top: 10px;
+                width: 120px;
+                background-color: #222222;
             }
-            .droplist:hover{
-                background-color: #2e4956;
+            .droplist li{
+                padding: 5px 5px;
+            }
+            .droplist li:hover{
+                background-color: #95A5A6;
             }
             .btli:hover .droplist{
                 display: block;
                 position: absolute;
+                width: fit-content;
             }
             /* drop dwn */
     /* link */
@@ -210,16 +229,19 @@
 
 /* other-info */
     .other-info{
-        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+
     }
     .other-info div{
         align-items: center;
         justify-content: center;
+         max-width: 800px;
     }
     .other-info p{
-       
         text-align: center;
-        max-width: 800px;
+       
     }
 /* other-info */
 
