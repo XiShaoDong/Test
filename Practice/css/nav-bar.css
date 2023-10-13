@@ -21,7 +21,7 @@
         }
         .church-text{
             margin: 0px;
-            font-size: 1px;
+            font-size:0.5rem;
             /* font-size: calc(0.1rem); */
             color: var(--color-white);
         }
@@ -71,6 +71,7 @@
         }
         .dropdown_menu.open{
             height: 75vh;
+            overflow-y: hidden;
         }
         .dropdown_menu li {
             padding: 0.6rem;
