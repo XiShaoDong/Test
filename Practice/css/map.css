@@ -27,26 +27,28 @@
         }
         .google-map iframe{
             width: calc(84vw);
-            height: calc(54vh);
+            height: calc(44vh);
         }
     }
-    /* .google-map iframe{
-        width: calc(80vw);
-        height: calc(20rem);
-    } */
+    @media (max-width:10000px) {
+        .google-map iframe{
+        width: calc(40vw);
+        height: calc(100vh);
+    }
+    }
+    
     .google-map {
         position: relative;
         flex: 5;
         overflow: auto;
-        /* width: 100vw; */
     }
     .map .text{
         flex: 3;
-        font-size: 20px;
+        font-size: 1.5rem;
     }
     .map .text h3{
         color: black;
-        font-size: 40px;
+        font-size: 3rem;
         margin-top: 0;
     }
 
