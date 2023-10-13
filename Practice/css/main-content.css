@@ -1,0 +1,31 @@
+
+
+/* main content */
+.main-content{
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 15px 30px;
+}
+.main-content div,h2{
+    padding: 15px ;
+}
+hr{
+    color: grey;
+    margin: auto;
+}
+.main-content h2{
+    color: #43787A;
+    font-size: 40px;
+}
+.italic{
+    font-style: italic;
+    font-size: 10px;
+}
+.main-content h3{
+    color: black;
+}
+
+/* main content */

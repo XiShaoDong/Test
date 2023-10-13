@@ -1,0 +1,60 @@
+
+/* background */
+    .background{
+        z-index:-1;
+        width:100% ;
+        height: 25vh;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-attachment: fixed;
+        background-color: #1C2D35;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Background image base on page */
+    
+        .main{
+            background-image: url(../images/main.jpg);
+        }
+        .give{
+            background-image: url(../images/give.jpg);
+        }
+        .worship{
+            background-image: url(../images/worship.jpg);
+        }
+        .about{
+            background-image: url(../images/about.jpg);
+        }
+
+    /* Background image base on page */
+    .background div{
+        padding: 50px;
+    }
+    .background h1, h3 {
+        color: white;
+        text-align: center;
+    }
+
+/* background */
+
+/* other-info */
+    .other-info{
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .other-info div{
+        align-items: center;
+        justify-content: center;
+        /* max-width: 800px; */
+    }
+    .other-info p{
+        text-align: center;
+       
+    }
+/* other-info */
+
