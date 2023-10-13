@@ -8,7 +8,8 @@
 
         <!-- <script type="text/javascript" src="./script.js"></script> -->
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  -->
     </head>
     <body>
         <div class="screen">
@@ -67,24 +68,27 @@
                     </ul> 
                 </div>
             </div>
-            <div class="dropdown_menu">
-                <hr size="1" width="100%" >
-                <li><a href="./test.html">Test</a></li>
-                <hr size="1" width="100%" >
-                <li><a href="./">Home</a></li>
-                <hr size="1" width="100%" >
-                <li>
-                    <a href="./about.html">About&nbsp;</a>
-                    <i class="fa fa-angle-down" ></i>
-                </li>
-                <hr size="1" width="100%" >
-                <li>
-                    <a href="./worship.html">Worship&nbsp;</a>
-                    <i class="fa fa-angle-down" ></i>
-                </li>
-                <hr size="1" width="100%" >
-                <li><a href="./give.html">Give&nbsp;</a></li>
-                <hr size="1" width="100%" >
+            <div class="parent drop">
+                <div class="dropdown_menu">
+                    <!-- <hr size="1" width="100%" >s -->
+                    <li><a href="./test.html">Test</a></li>
+                    <hr size="1" width="100%" >
+                    <li><a href="./">Home</a></li>
+                    <hr size="1" width="100%" >
+                    <li>
+                        <a href="./worship.html">Worship&nbsp;</a>
+                        <i class="fa fa-angle-down" ></i>
+                    </li>
+                    <hr size="1" width="100%"  >
+                    <li>
+                        <a href="./about.html">About&nbsp;</a>
+                        <i class="fa fa-angle-down" ></i>
+                    </li>
+                    <hr size="1" width="100%" >
+                    
+                    <li><a href="./give.html">Give&nbsp;</a></li>
+                    <hr size="1" width="100%" >
+                </div>
             </div>
             <script>
                 const toggleBtn = document.querySelector('.toggle_btn')
