@@ -6,6 +6,6 @@ toggleBtn.onclick = function() {
     dropDownMenu.classList.toggle('open')
     const isOpen = dropDownMenu.classList.contains('open')
 
-    toggleBtnIcon.classList = isOpen?'fa-solid fa-xmark' : 'fa-solid fa-bars'
+    toggleBtnIcon.classList = isOpen?'fa-solid fa-bars' : 'fa-solid fa-bars'
 
 }
