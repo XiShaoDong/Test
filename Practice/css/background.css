@@ -3,7 +3,7 @@
     .background{
         z-index:-1;
         width:100% ;
-        height: 25vh;
+        height: 28vh;
         position: relative;
         overflow: hidden;
         background-size: cover;
@@ -13,6 +13,12 @@
         background-color: #1C2D35;
         align-items: center;
         justify-content: center;
+    }
+    @media (max-width:600px) {
+
+       .background{
+        background-attachment: unset;
+       }
     }
     /* Background image base on page */
     
@@ -30,8 +36,8 @@
         }
 
     /* Background image base on page */
-    .background div{
-        padding: 50px;
+    .background-content{
+        padding: 4rem 1rem;
     }
     .background h1, h3 {
         color: white;
@@ -44,8 +50,6 @@
     .other-info{
         display: flex;
         flex-direction: column;
-        
-
     }
     .other-info div{
         align-items: center;
@@ -53,8 +57,7 @@
         /* max-width: 800px; */
     }
     .other-info p{
-        text-align: center;
-       
+        text-align: center; 
     }
 /* other-info */
 

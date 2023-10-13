@@ -11,6 +11,12 @@
         display: flex;
         flex-direction: row;
     }
+    @media (min-width:700px) {
+        .google-map iframe{
+        width: calc(40vw);
+        height: calc(50vh);
+    }
+    }
     @media (max-width:600px) {
         .map{
             display: flex;
@@ -27,29 +33,18 @@
         }
         .google-map iframe{
             width: calc(84vw);
-            height: calc(44vh);
+            height: calc(28vh);
         }
     }
-    @media (max-width:10000px) {
-        .google-map iframe{
-        width: calc(40vw);
-        height: calc(100vh);
-    }
-    }
-    
+
     .google-map {
         position: relative;
         flex: 5;
         overflow: auto;
     }
-    .map .text{
+    .location {
         flex: 3;
         font-size: 1.5rem;
-    }
-    .map .text h3{
-        color: black;
-        font-size: 3rem;
-        margin-top: 0;
     }
 
     .map h3,h4,b{
