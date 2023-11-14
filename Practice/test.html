@@ -12,10 +12,11 @@
         <div class="screen">
             <!-- navigation -->
             <div class="header">
-                <div class="logo">
-                    <img class="church" src="./images/icon/Icon2.jpg" alt="church logo">
-                    <p class="church-text" >Spring Rain Church</p>
-                    
+                <div>
+                    <a class="logo" href="./">
+                        <img class="church" src="./images/icon/title.png" alt="church logo">
+                        <span class="church-text">Spring Rain Church</span> 
+                    </a>  
                 </div>
                     <ul class="nav-bar">
                         <li class="btli">
@@ -26,10 +27,10 @@
                         </li>      
                         <li class="btli">
                             <div class="row">
-                            <a href="./about.html">About&nbsp;</a>
-                            <i class="fa fa-angle-down" ></i>
-                            </div>
-                            <ul class="droplist">
+                                <a href="./about.html">About&nbsp;</a>
+                                <i class="fa fa-angle-down" ></i>
+                                </div>
+                                <ul class="droplist">
                                 <li><a href="#">Dr </a></li>
                                 <li><a href="#">Dro</a></li>
                                 <li><a href="#">Drop</a></li>
@@ -59,44 +60,72 @@
                                 <a href="./give.html">Give&nbsp;</a>
                             </div>
                         </li>
-                        <div class="toggle_btn">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
+                        <input type = "checkbox" id="toggler">
+                        <label for="toggler">
+                            <div class="toggle_btn">
+                                <!-- <i class="fa-solid fa-bars"></i> -->
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </label>  
+                        <div class="nav-items">
+                            <ul>
+                                <li><a href="./test.html">Test</a></li>
+                                <hr size="1" width="100%" >
+                                <li><a href="./">Home</a></li>
+                                <hr size="1" width="100%" >
+                                <li>
+                                    <a href="./about.html">About&nbsp;</a>
+                                    <i class="fa fa-angle-down" ></i>
+                                </li>
+                                <hr size="1" width="100%" >
+                                <li>
+                                    <a href="./worship.html">Worship&nbsp;</a>
+                                    <i class="fa fa-angle-down" ></i>
+                                </li>
+                                <hr size="1" width="100%" >
+                                <li><a href="./give.html">Give&nbsp;</a></li>
+                                <hr size="1" width="100%" >
+                            </ul>
+                        </div>         
                     </ul> 
                 </div>
             </div>
-            <div class="dropdown_menu">
-                <hr size="1" width="100%" >
-                <li><a href="./test.html">Test</a></li>
-                <hr size="1" width="100%" >
-                <li><a href="./">Home</a></li>
-                <hr size="1" width="100%" >
-                <li>
-                    <a href="./about.html">About&nbsp;</a>
-                    <i class="fa fa-angle-down" ></i>
-                </li>
-                <hr size="1" width="100%" >
-                <li>
-                    <a href="./worship.html">Worship&nbsp;</a>
-                    <i class="fa fa-angle-down" ></i>
-                </li>
-                <hr size="1" width="100%" >
-                <li><a href="./give.html">Give&nbsp;</a></li>
-                <hr size="1" width="100%" >
-            </div>
-            <script>
-                const toggleBtn = document.querySelector('.toggle_btn')
-                const toggleBtnIcon = document.querySelector('.toggle_btn i')
-                const dropDownMenu = document.querySelector('.dropdown_menu')
-    
-                toggleBtn.onclick = function() {
-                    dropDownMenu.classList.toggle('open')
-                    const isOpen = dropDownMenu.classList.contains('open')
-    
-                    toggleBtnIcon.classList = isOpen?'fa-solid fa-bars' : 'fa-solid fa-bars'
-    
-                }
-            </script>
+                    <!-- Menu impplemented by Script -->
+                    <!-- <div class="dropdown_menu">
+
+                        <hr size="1" width="100%" >
+                        <li><a href="./test.html">Test</a></li>
+                        <hr size="1" width="100%" >
+                        <li><a href="./">Home</a></li>
+                        <hr size="1" width="100%" >
+                        <li>
+                            <a href="./about.html">About&nbsp;</a>
+                            <i class="fa fa-angle-down" ></i>
+                        </li>
+                        <hr size="1" width="100%" >
+                        <li>
+                            <a href="./worship.html">Worship&nbsp;</a>
+                            <i class="fa fa-angle-down" ></i>
+                        </li>
+                        <hr size="1" width="100%" >
+                        <li><a href="./give.html">Give&nbsp;</a></li>
+                        <hr size="1" width="100%" >
+                    </div>
+                    <script>
+                        const toggleBtn = document.querySelector('.toggle_btn')
+                        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                        const dropDownMenu = document.querySelector('.dropdown_menu')
+            
+                        toggleBtn.onclick = function() {
+                            dropDownMenu.classList.toggle('open')
+                            const isOpen = dropDownMenu.classList.contains('open')
+            
+                            toggleBtnIcon.classList = isOpen?'fa-solid fa-bars' : 'fa-solid fa-bars'
+            
+                        }
+                    </script> -->
+            
             <!-- navigation -->
 
             <!-- Background -->
