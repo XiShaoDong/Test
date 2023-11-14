@@ -23,16 +23,16 @@
     /* Background image base on page */
     
         .main{
-            background-image: url(../images/main.jpg);
+            background-image: url(../images/header-cover/main.jpg);
         }
         .give{
-            background-image: url(../images/give.jpg);
+            background-image: url(../images/header-cover/give.jpg);
         }
         .worship{
-            background-image: url(../images/worship.jpg);
+            background-image: url(../images/header-cover/worship.jpg);
         }
         .about{
-            background-image: url(../images/about.jpg);
+            background-image: url(../images/header-cover/about.jpg);
         }
 
     /* Background image base on page */
