@@ -1,6 +1,23 @@
-
-
 /* main content */
+    /* default */
+    .weighted{
+        font-weight: 700;
+    }
+    .emphasize{
+        color: var(--color-secondary);
+        font-weight: 600;
+    }
+    .small{
+        font-size: 1.2rem;
+        /* transform: scale(2.0); */
+    }
+
+    .small:hover{
+        transform: scale(2.0);
+        color:red;
+    }
+    
+    /* default */
 .main-content{
     color: black;
     justify-content: center;
@@ -11,6 +28,9 @@
 }
 .main-content div,h2{
     padding: 15px ;
+}
+.main-content .section-divider,.main-content .inner-divider{
+    padding: 0px;
 }
 hr{
     color: grey;
