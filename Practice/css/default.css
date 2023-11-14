@@ -30,6 +30,13 @@
     body{
         overflow-x: hidden;
     }
+    .transition_none *{
+        -webkit-transition:none!important;
+        -moz-transition:none!important;
+        -ms-transition:none!important;
+        -o-transition:none!important;
+        transition:none!important;
+    }
     /* font */
         .italic{
             font-style: italic;
