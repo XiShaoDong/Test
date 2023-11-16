@@ -135,7 +135,7 @@
             text-transform:uppercase;
         }
         .nav-bar i{
-            display: none;
+            display: none; /*下箭头*/
         }
         .nav-bar {
             padding: 10px 20px;
@@ -145,7 +145,6 @@
         }
         .nav-bar a{
             text-align: center;
-            text-decoration: none;
             color: var(--color-white);
             display: block;
             width: fit-content;
@@ -155,16 +154,17 @@
         .nav-bar a:hover{
             opacity: 0.5;
         }
-        .row{
-            display: flex;
-            flex-direction: row;
-        }
-        .nav-bar .fa{
-            font-size: 18px;
-            vertical-align:10%;
-            color: white;
-        }
+      
             /* Old one DROPDOWN MENU */
+              .row{
+                    display: flex;
+                    flex-direction: row;
+                }
+                .nav-bar .fa{
+                    font-size: 18px;
+                    vertical-align:10%;
+                    color: white;
+                }
     /* link */
 
 /* naviation bar End*/

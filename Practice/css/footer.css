@@ -2,7 +2,7 @@
 .footer{
     display: flex;
     flex-direction: row;
-
+    cursor: pointer;
     background-color: var(--color-primary);
     /* height: 10vh; */
     text-align: center;
