@@ -29,6 +29,7 @@
         text-align: center;
         background-color: white;
         padding: 15px 30px;
+        margin: 0 auto;
     }
     @media(min-width:1300px)  {
         .main-content{

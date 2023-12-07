@@ -8,8 +8,78 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script type="text/javascript" src="./script.js"></script>
+        <script>
+            var index = 0;
+            var list = ['cd.png','cd1.png']
+            var path = './images/prayer/'
+            function preSlide(){
+                var img = document.getElementById('CD1')
+                if(index!=list.length-1){
+                    index++
+                } else{
+                    index = 0
+                }
+                var imgPath = path.concat(list[index])
+                img.src = imgPath
+    
+            }
+            function nextSlide(){
+                var img = document.getElementById('CD1')
+                if(index!=0){
+                    index--
+                } else{
+                    index = list.length-1
+                }
+                var imgPath = path.concat(list[index])
+                
+                img.src = imgPath
+                console.log(index)
+                console.log(imgPath)
+            }
+        </script>
+        <style>
+            
+            .main-content{
+                padding: 0;
+                margin: 0;
+            }
+            #CD1{
+                width: 100vw;
+                height: 100vh;
+            }
+            #btn1,#btn2{
+                position: absolute;
+                right: 100px;
+                top: 110px;
+                width: 40px;
+            }
+            #btn2{
+                right: 40px;
+            }
+            #btn1:hover,#btn2:hover{
+                width: 50px;
+                animation: shake 0.5s;
+                animation-iteration-count: 1;
+            }
+            @keyframes shake {
+                0% { transform: translate(1px, 1px) rotate(0deg); }
+                10% { transform: translate(-1px, -2px) rotate(-1deg); }
+                /* 20% { transform: translate(-3px, 0px) rotate(1deg); }
+                30% { transform: translate(3px, 2px) rotate(0deg); } */
+                40% { transform: translate(1px, -1px) rotate(1deg); }
+                50% { transform: translate(-1px, 2px) rotate(-1deg); }
+                60% { transform: translate(-3px, 1px) rotate(0deg); }
+                70% { transform: translate(3px, 1px) rotate(-1deg); }
+                80% { transform: translate(-1px, -1px) rotate(1deg); }
+                90% { transform: translate(1px, 2px) rotate(0deg); }
+                100% { transform: translate(1px, -2px) rotate(-1deg); }
+            }
+           
+        </style>
     </head>
-    <body>
+
+    <body class="transition_non">
+        
         <div class="screen">
             <!-- navigation -->
             <div class="header">
@@ -21,14 +91,14 @@
                 </div>
                     <ul class="nav-bar">
                         <li class="btli">
-                            <a href="./test">Test</a>
+                            <a href="./test.html">Test</a>
                         </li>
                         <li class="btli">
                             <a href="./">Home</a>
                         </li>      
                         <li class="btli">
                             <div class="row">
-                            <a href="./about">About&nbsp;</a>
+                            <a href="./about.html">About&nbsp;</a>
                             <i class="fa fa-angle-down" ></i>
                             </div>
                             <ul class="droplist">
@@ -43,7 +113,7 @@
                         
                         <li class="btli">
                             <div class="row">
-                                <a href="./worship">Worship&nbsp;</a>
+                                <a href="./worship.html">Worship&nbsp;</a>
                                 <i class="fa fa-angle-down" ></i>
                             </div>
                             <ul class="droplist">
@@ -58,7 +128,13 @@
                         <li class="btli">
                         
                             <div class="row">
-                                <a href="./give">Give&nbsp;</a>
+                                <a href="./give.html">Give&nbsp;</a>
+                            </div>
+                        </li>
+                        <li class="btli">
+                        
+                            <div class="row">
+                                <a href="./prayer.html">Pray</a>&nbsp;</a>
                             </div>
                         </li>
                         <input type = "checkbox" id="toggler">
@@ -71,17 +147,18 @@
                         </label>  
                         <div class="nav-items">
                             <ul>
-                                <li><a href="./test">Test</a></li>
+                                <li><a href="./test.html">Test</a></li>
                                 <li><a href="./">Home</a></li>
                                 <li>
-                                    <a href="./about">About&nbsp;</a>
+                                    <a href="./about.html">About&nbsp;</a>
                                     <i class="fa fa-angle-down" ></i>
                                 </li>
                                 <li>
-                                    <a href="./worship">Worship&nbsp;</a>
+                                    <a href="./worship.html">Worship&nbsp;</a>
                                     <i class="fa fa-angle-down" ></i>
                                 </li>
-                                <li><a href="./give">Give&nbsp;</a></li>
+                                <li><a href="./give.html">Give&nbsp;</a></li>
+                                <li><a href="./prayer.html">Pray&nbsp;</a></li>
                             </ul>
                         </div>  
                     </ul> 
@@ -89,66 +166,14 @@
             </div>
             <!-- navigation -->
 
-            <!-- Background -->
-            <div class="give background">
-                <div class="background-content" > 
-                    <h1>Our Beliefs&nbsp;</h1>
-                    <h3>"sample text sample text sample text sample text sample textsample text sample text"</h3>
-                </div>
-            </div>
-            <!-- Background -->
 
             <!-- Main content -->
             <div class="main-content">
-
-                <div class="sectionOne">
-                    <div class="italic">Join us for</div>
-                    <h2>SUNDAY WORSHIP!</h2>
-                    <div class="inner-divider"><hr size="2" width="5%"></div>
-                    <div>
-                        <h3>
-                            Worship Services
-                            <br>
-                            11:00 am - 12:00 am
-                        <h3>
-                    </div>
-                </div>
-
-                <div class="section-divider"><hr size="2" width="95%" ></div>
-
-                <div class="sectionTwo">
-                    <div class="map">
-                        <div class="location">
-                            <span class="weighted">Sunday Mornings</span>
-                              <br>
-                            <span class="small"> 11:00 am - 12:00 am</span> 
-                            <div><hr size="2" width="10%"></div>
-                            <b class="small emphasize">3 Hawthorne Street  <br>
-                                Malden, MA 02148
-                            </b>
-        
-                        </div>
-                        <div class="google-map">
-                            <!-- width="600" height="450" -->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.000369097421!2d-71.08232122372625!3d42.4277270308236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e371595241e5e1%3A0x2591a1e0fe126796!2s3%20Hawthorne%20St%2C%20Malden%2C%20MA%2002148!5e0!3m2!1sen!2sus!4v1696874399732!5m2!1sen!2sus" 
-                                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section-divider"><hr size="2" width="95%" ></div>
-                
-                <div class="sectionThree">
-                <div class="other-info"> 
-                    <h2>LATEST NEWS & EVENTS </h2>
-                    <div>
-                            There's always something new happening at FCCH. 
-                            Below, you'll find the info you need to connect to some of the featured news and events in our growing church community.
-                            <br> Check 'em out and get involved! 
-                    </div>
-                </div>
-                </div>
+          
+                    <img id="CD1" onclick="nextSlide()" src="./images/prayer/cd.png" alt="cd">    
+                    <img id="btn1" onclick="preSlide()" src="./images/prayer/left-arrow.png" alt="pre">
+                    <img id="btn2" onclick="nextSlide()" src="./images/prayer/right-arrow.png" alt="next">        
+            
             </div>
             <!-- Main content -->
 
@@ -174,10 +199,13 @@
                         <div class="heading-block">
                             <h3>Contect Us</h3>
                         </div>
-                        
                         <div>Sample</div>
                         <div>Sample</div>
                         <div>Sample</div>
+                        <!-- <div>857-218-2179</div>
+                        <div>3 Hawthorne St,<br>
+                            Malden, MA 02148</div>
+                        <div>Springrainchurch<br>@gmail.com</div> -->
                     </div>
                     <div>
                         <div class="heading-block">
